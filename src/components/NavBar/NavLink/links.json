@@ -1,0 +1,6 @@
+[
+    { "alias": "home", "href": "/", "newTab": false },
+    { "alias": "blog", "href": "/blog", "newTab": false },
+    { "alias": "about", "href": "/about", "newTab": false },
+    { "alias": "contact", "href": "/contact", "newTab": false }
+]
