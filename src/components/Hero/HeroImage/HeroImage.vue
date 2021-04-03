@@ -1,6 +1,6 @@
 <template>
-    <div class="lg:w-1/2 sm:w-1/2 p-2">
-        <div class="flex relative h-72">
+    <div class="p-2">
+        <div class="flex relative h-full">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" :src="`https://picsum.photos/60${index}/50${index}`">
           <div class="transition-opacity duration-500 cursor-pointer px-8 py-10 relative z-10 w-full border-4 border-yellow-300 bg-white opacity-0 hover:opacity-100">
             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 uppercase">Catagory</h2>

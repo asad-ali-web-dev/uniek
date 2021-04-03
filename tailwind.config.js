@@ -5,7 +5,14 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      gridColumn: ['first', 'last', 'even', 'odd'],
+      gridRow: ['first', 'last', 'even', 'odd'],
+      gridColumnEnd: ['first', 'last', 'even', 'odd'],
+      gridColumnStart: ['first', 'last', 'even', 'odd'],
+      gridRowEnd: ['first', 'last', 'even', 'odd'],
+      gridRowStart: ['first', 'last', 'even', 'odd'],
+    },
   },
   plugins: [],
 }
