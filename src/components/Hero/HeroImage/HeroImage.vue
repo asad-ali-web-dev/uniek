@@ -1,23 +1,46 @@
 <template>
-    <div class="p-2">
-        <div class="flex relative h-full">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" :src="`https://picsum.photos/60${index}/50${index}`">
-          <div class="transition-opacity duration-500 cursor-pointer px-8 py-10 relative z-10 w-full border-4 border-yellow-300 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 uppercase">Catagory</h2>
-            <h1 class="title-font text-lg font-bold text-yellow-600 mb-3 capitalize">post title {{ index + 1 }}</h1>
-            <p class="leading-relaxed text-gray-500">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
+    <div class="lg:w-4/5 mx-auto mt-8">
+        <div class="flex flex-wrap w-full py-32 px-10 relative mb-4 transition-transform transform hover:scale-95 duration-300 cursor-pointer">
+            <img alt="gallery" class="w-full object-cover h-full object-center block absolute opacity-30 inset-0" src="https://picsum.photos/800/400">
+            <div class="text-center relative z-10 w-full">
+                <h2 class="text-4xl text-yellow-500 font-extrabold mb-2">Shooting Stars</h2>
+                <p class="leading-relaxed text-gray-300 text-lg">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                <a class="mt-4 bg-indigo-500 py-3 px-5 text-white rounded-lg inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-wrap flex-col md:flex-row -mx-2 space-y-4 md:space-y-0">
+            <div class="px-2 w-full md:w-1/2">
+                <div class="flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative transition-transform transform hover:scale-95 duration-300 cursor-pointer">
+                    <img alt="gallery" class="w-full object-cover h-full object-center block opacity-30 absolute inset-0" src="https://picsum.photos/801/401">
+                    <div class="text-center relative z-10 w-full">
+                        <h2 class="text-2xl text-yellow-500 font-extrabold mb-2">Shooting Stars</h2>
+                        <p class="leading-relaxed text-gray-300 text-lg">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                        <a class="mt-4 bg-indigo-500 py-2 px-4 text-white rounded-lg inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="px-2 w-full md:w-1/2">
+                <div class="flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative transition-transform transform hover:scale-95 duration-300 cursor-pointer">
+                    <img alt="gallery" class="w-full object-cover h-full object-center block opacity-30 absolute inset-0" src="https://picsum.photos/802/402">
+                    <div class="text-center relative z-10 w-full">
+                        <h2 class="text-2xl text-yellow-500 font-extrabold mb-2">Shooting Stars</h2>
+                        <p class="leading-relaxed text-gray-300 text-lg">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                        <a class="mt-4 bg-indigo-500 py-2 px-4 text-white rounded-lg inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    props: ['index'],
-    setup() {
-        
-    },
-})
-</script>

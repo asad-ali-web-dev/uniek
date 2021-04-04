@@ -1,5 +1,5 @@
 <template>
-    <span class="border-r-2 border-red-900"> {{ curTyperWord }}</span>
+    <span class="py-2"> {{ curTyperWord }} <span class="text-red-300 text-3xl animate-ping-fast">✍️</span></span>
 </template>
 
 <script lang="ts">
@@ -17,14 +17,16 @@ export default defineComponent({
         setInterval(() => {
             curTyperWord.value = props.keywords[k].slice(i, j++)
             if (props.keywords[k].length + 1 == j) {
-                j = 0
-                if (k < props.keywords.length - 1) {
-                    k++
-                } else {
-                    k = 0
-                }
+                setTimeout(() => {
+                    j = 0
+                    if (k < props.keywords.length - 1) {
+                        k++
+                    } else {
+                        k = 0
+                    }
+                }, 1500)
             } 
-        }, 300)
+        }, 200)
 
         return { curTyperWord }
     },
